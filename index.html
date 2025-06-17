@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prolog Коли с Анимации</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Prolog Коли с Анимации</h1>
+
+  <div class="instructions">
+    <p><strong>Как да използваш:</strong></p>
+    <ul>
+      <li>Въведи Prolog заявка в полето по-долу (например: <code>is_sports_car(X).</code>)</li>
+      <li>Натисни бутона "Изпълни"</li>
+      <li>Ще се покажат намерените коли и съответните им GIF анимации</li>
+    </ul>
+  </div>
+
+  <textarea id="prolog-input">% Примери на заявки:
+is_sports_car(X).
+is_electric(X).
+is_big(X).
+is_luxury(X).</textarea>
+  <button onclick="runProlog()">Изпълни</button>
+
+  <div id="result"></div>
+  <div class="animal-container" id="animal-animation"></div>
+
+  <script src="https://unpkg.com/tau-prolog"></script>
+  <script src="script.js"></script>
+</body>
+</html>
